@@ -1,0 +1,58 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+choice = input('You come across a fork in the road, you want to to go, type "Left" or "Right"  ').lower()
+if choice == "left":
+  choice2 = input('You collected berries and found a key, you noticed a cabin in the distance, want to go "RIGHT" the cabin or "LEFT" to the trail. ').lower()
+  if choice2 == "right":
+    choice3 = input('you go to the cabin and noticed it seemed abandoned, type "door" to try the front door type "back" to try the back door ').lower()
+    if choice3 == "door":
+      choice4 = input('you make your way to the front door and find the door is locked, do you try the key type "key" or do you crawl through the window type "window" ').lower()
+      if choice4 == "key":
+        print("The door was trapped and you fell through a pit GAME OVER!")
+      else:
+        choice4 == "window"
+        print("A Hooded figure cought you, you were never seen agin GAME OVER!")
+    elif choice3 == "back":
+      choice5 = input('you make your way around back and see the door propped open, as you peek inside you noticed a showe figure walk upstairs and a set of stairs that go down into the cellar, do you follow the figure type figure or do you make your way down stairs to the cell, Type "Follow" or "Cellar" ').lower()
+      if choice5 == "follow":
+        choice6 = input('You follow the Shadow figure up the stairs making sure not to be hurd, you noticed a small chest in one of the rooms as you follow, and a larger one in the room with the shadow figure, do you take the small box and leave type "small" or do you confront the shadow for the large box type "big" ').lower()
+        if choice6 == "small":
+          print("You grab the small box and make your way out of the house without being noticed, you open the box and its filled with jems and coins, Congradulations you found the Demons Tresure")
+        else:
+          choice6 == "big"
+          print("You attempt to confront the figure and was over powerd by the Demon, your greed costed you your life GAME OVER")
+      else:
+        choice5 == "cellar"
+        print("You make your way down into the cellar, its cold and damp,suddenly the door slams and you hear a evil laugh behind the doow, you are consumed by the darkenss GAME OVER")
+        
+  else: 
+    choice2 == "left"
+    print("attacked by Wolvies, GAME OVER")
+else:
+    print("Went though the bushies, you fell in bear trap, GAME OVER")
